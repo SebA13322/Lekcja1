@@ -1,30 +1,39 @@
 import java.util.Scanner;
-public class zadanie29{
+public class zadanie20{
     public static void main(String[] args) {
         Scanner klawiatura = new Scanner(System.in);
 
-        Double P;
+        Double kwota;
 
         System.out.println("Kwota która wpłacasz: ");
-        P = klawiatura.nextInt();
+        kwota = klawiatura.nextDouble();
         klawiatura.nextLine();
 
-        Double r;
+        Double oprocentowanie;
 
         System.out.println("stopa oprocentowania: ");
-        r = klawiatura.nextInt();
+        oprocentowanie = klawiatura.nextDouble();
         klawiatura.nextLine();
 
-        Double n;
+        Double liczbaodsetek;
         System.out.println("ile razy w ciągu roku odsetki sa doliczane: ");
-        n = klawiatura.nextInt();
+        liczbaodsetek = klawiatura.nextDouble();
         klawiatura.nextLine();
 
-        Double t;
+        Double lata;
         System.out.println("liczba lat: ");
-        t = klawiatura.nextInt();
+        lata = klawiatura.nextDouble();
         klawiatura.nextLine();
 
-        double A
-        A = P*(1)
-    }
+        double nt = lata * liczbaodsetek;
+        double potega = Math.pow(1 + oprocentowanie / lata, nt);
+        double wynik;
+        wynik = kwota * potega;
+
+        System.out.println("kwota początkowo zdeponowana: " + kwota);
+        System.out.println("kwota rocznej stopy oprocentowania: " + oprocentowanie);
+        System.out.println("ile razy w ciągu roku odsetki są naliczane: " + liczbaodsetek);
+        System.out.println("liczby lat, przez jakie środki będą znajdować się na koncie i generować odsetki: " + kwota);
+        System.out.println("kwota po określonej liczbie lat: " + wynik);
+        };
+    };
