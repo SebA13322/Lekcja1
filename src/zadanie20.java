@@ -9,11 +9,14 @@ public class zadanie20{
         kwota = klawiatura.nextDouble();
         klawiatura.nextLine();
 
-        Double oprocentowanie;
+        Double oprocentowanie1;
 
         System.out.println("stopa oprocentowania: ");
-        oprocentowanie = klawiatura.nextDouble();
+        oprocentowanie1 = klawiatura.nextDouble();
         klawiatura.nextLine();
+
+        double oprocentowanie;
+        oprocentowanie = oprocentowanie1/100;
 
         Double liczbaodsetek;
         System.out.println("ile razy w ciągu roku odsetki sa doliczane: ");
